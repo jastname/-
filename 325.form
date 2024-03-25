@@ -4,7 +4,7 @@
         <title>쇼핑몰 회원관리 프로그램</title>
         <script>
             function aaa(){
-                alert("자바스크립트!")
+                //alert("자바스크립트!")
                 if(document.frm.txt1.value.length ==0){
                     alert("회원번호가 입력되지 않았습니다.!")
                 }
