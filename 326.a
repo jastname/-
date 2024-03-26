@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>My title</title>
+        <script type="text/javascript">
+            function aaa(){
+                if(document.frm.saleno.value==""){
+
+                    alert("판매번호가 입력되지 않았습니다.");
+                    frm.saleno.focus();
+                    return false;
+                }
+                alert("정상적으로 매장별 판매등록이 완료되었습니다.");
+                return true;
+            }
+            function bbb(){
+                alert("모든 데이터를 삭제하고 처음부터 다시 입력합니다!");
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>판매등록</h2>
+        <form action="action_txt.jsp" name="frm">
+            <table border=1>
+                <tr><td>비번호</td>
+                    <td><input type="number" name="saleno"></td></tr>
+                <tr><td colspan="2">
+                    <input type="submit" value="등록" onclick="return aaa()">
+                    <input type="reset" value="다시쓰기" onclick="return bbb()">
+                </td></tr>
+            </table>
+        </form>
+    </body>
+</html>
